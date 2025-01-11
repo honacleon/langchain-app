@@ -5,6 +5,7 @@ import pytesseract
 from PIL import Image
 import docx
 import streamlit as st
+from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
 from langchain_community.chat_models import ChatOpenAI
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
